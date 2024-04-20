@@ -1,1 +1,87 @@
-h1 {visibility: hidden;}
+:root {
+    --primary-font: "Roboto", sans-serif;
+    --primary-size: 16px;
+    --primary-color: #434455;
+}
+
+body {font-family: var(--primary-font);
+    font-size: var(--primary-size);
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    background-color: #fcfcfc;
+}
+
+.navigation:active {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navigation:hover,
+.navigation:focus {
+    color: #4D5AE5;
+    text-decoration: underline;
+}
+
+button {font-size: var(--primary-size);
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul, ol {list-style: none;}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Пропиши стилі для body (font-family, color та background-color) 
+Пропиши CSS-правила для скидання дефолтного підкреслення для посилань та маркерів у списках. 
+Всі необхідні шрифти за макетом та їх варіації (вага і накреслення) підключені з сервісу Google Fonts одним посиланням. 
+Необхідна вагу для Raleway – 800,
+а для Roboto – 400, 500, 700 і 900.*/
