@@ -12,13 +12,11 @@ body {font-family: var(--primary-font);
     background-color: #fcfcfc;
 }
 
-.navigation:active {
+.header-menu-list {
     text-decoration: none;
-    color: var(--primary-color);
 }
 
-.navigation:hover,
-.navigation:focus {
+.header-menu-list:active {
     color: #4D5AE5;
     text-decoration: underline;
 }
@@ -27,13 +25,15 @@ button {font-size: var(--primary-size);
     line-height: 24px;
     font-weight: 500;
     letter-spacing: 0.04em;
-    cursor: pointer;
     text-decoration: none;
+    background-color: ;
 }
 
 ul, ol {list-style: none;}
 
-.visually-hidden {
+.footer {background-color: #2e2f42;}
+
+.visually-hidden-title {
     position: absolute;
     width: 1px;
     height: 1px;
