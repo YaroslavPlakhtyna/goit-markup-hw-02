@@ -1,39 +1,85 @@
 :root {
-    --primary-font: "Roboto", sans-serif;
-    --primary-size: 16px;
-    --primary-color: #434455;
+    --primary-font: Roboto;
+    --secondary-font: Raleway;
+
+    --standard-font-size: 16px;
+
+    --standard-letter-spacing: 0.02em;
+    --double-letter-spacing: 0.04em;
+
+    --medium-font-weight: 500;
+    --large-font-weight: 700;
+
+    --standard-line-height: 1.5;
+
+    --primary-color: #2e2f42;
+    --secondary-color: #434455;
+    --specific-border-color: #e7e9fc;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #f4f4fd;
+    --primary-control-color: #4d5ae5;
+    --active-control-color: #404bbf;
+
 }
 
-body {font-family: var(--primary-font);
-    font-size: var(--primary-size);
-    line-height: 24px;
-    letter-spacing: 0.02em;
+body {
+    font-family: var(--primary-font), sans-serif;
+    font-size: var(--standard-font-size);
+    line-height: var(--standard-line-height);
+    letter-spacing: var(--standard-letter-spacing);
     color: var(--primary-color);
-    background-color: #fcfcfc;
+    background-color: var(--primary-background-color);
 }
 
-.header-menu-list {
+ul {
+    list-style-type: none;
+}
+
+/* Temporary properties for better appearance of lists*/
+li {
+    display: inline-block;
+    margin: 8px;
+}
+
+a {
+    color: inherit;
     text-decoration: none;
 }
 
-.header-menu-list:active {
-    color: #4D5AE5;
-    text-decoration: underline;
+.main-studio-title {
+    font-size: 56px;
+    font-weight: var(--large-font-weight);
+    line-height: 1.071;
+    text-align: center;
 }
 
-button {font-size: var(--primary-size);
-    line-height: 24px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-decoration: none;
-    background-color: ;
+.main-studio-title-btn {
+    color: var(--primary-background-color);
+    background-color: var(--primary-control-color);
+    border-color: var(--primary-control-color);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: var(--medium-font-weight);
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-align: center;
 }
 
-ul, ol {list-style: none;}
+.main-studio-title-btn:hover,
+.main-studio-title-btn:focus,
+.main-studio-title-btn:active {
+    background-color: var(--active-control-color);
+    border-color: var(--active-control-color);
+}
 
-.footer {background-color: #2e2f42;}
+.section-header {
+    font-size: 36px;
+    font-weight: var(--large-font-weight);
+    line-height: 1.111;
+    text-align: center;
+}
 
-.visually-hidden-title {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -47,41 +93,82 @@ ul, ol {list-style: none;}
     overflow: hidden;
 }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+.header-nav-item-link {
+    font-weight: var(--medium-font-weight);
+}
+
+.contacts-list-item {
+    color: var(--secondary-color);
     font-style: normal;
 }
 
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+.contacts-list-item:hover,
+.contacts-list-item:focus,
+.header-nav-item-link:hover,
+.header-nav-item-link:focus,
+.header-nav-item-link:active {
+    color: var(--active-control-color);
 }
 
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+.team {
+    background-color: var(--secondary-background-color);
 }
 
-.roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+.team-card {
+    text-align: center;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
+.portfolio-filters-item-btn {
+    color: var(--primary-control-color);
+    background-color: var(--secondary-background-color);
+    border-color: var(--specific-border-color);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: var(--medium-font-weight);
+    line-height: inherit;
+    letter-spacing: var(--double-letter-spacing);
+    text-align: center;
+}
 
-.raleway {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
+.portfolio-filters-item-btn:hover,
+.portfolio-filters-item-btn:focus,
+.portfolio-filters-item-btn:active {
+    color: var(--primary-background-color);
+    background-color: var(--active-control-color);
+    border-color: var(--active-control-color);
+}
+
+.content-list-item {
+    background-color: var(--primary-background-color);
+}
+
+.content-list-item-header {
+    font-size: 20px;
+    font-weight: var(--medium-font-weight);
+    line-height: 1.2;
+}
+
+.header-logo,
+.footer-logo {
+    font-family: var(--secondary-font);
+    color: var(--primary-control-color);
+    font-size: 18px;
     font-weight: 800;
-    font-style: normal;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
-/* Пропиши стилі для body (font-family, color та background-color) 
-Пропиши CSS-правила для скидання дефолтного підкреслення для посилань та маркерів у списках. 
-Всі необхідні шрифти за макетом та їх варіації (вага і накреслення) підключені з сервісу Google Fonts одним посиланням. 
-Необхідна вагу для Raleway – 800,
-а для Roboto – 400, 500, 700 і 900.*/
+.header-logo span {
+    color: var(--primary-color);
+}
+
+.footer-logo span {
+    color: var(--primary-background-color);
+}
+
+.main-studio,
+footer {
+    background-color: var(--primary-color);
+    color: var(--primary-background-color);
+}
